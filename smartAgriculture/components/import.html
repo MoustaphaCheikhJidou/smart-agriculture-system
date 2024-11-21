@@ -1,0 +1,20 @@
+<!-- Dans result.html -->
+{% extends "index.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resultat de la Prediction </title>
+</head>
+<body>
+    <center>
+    <h1>Resultat de la Prediction</h1>
+   <h2> <p>Cette plante est : {{ predicted_label }}</p>
+    <p>Score: {{ score }}</p></h2>
+   </center>  
+</body>
+</html>
+{% endblock content %}
